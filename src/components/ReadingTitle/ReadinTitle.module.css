@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'kjv';
+  src: url('/src/assets/fonts/kjvfont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .title {
+  font-family: 'kjv';
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: rem(100px);
   font-weight: 900;

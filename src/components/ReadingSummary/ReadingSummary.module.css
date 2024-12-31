@@ -1,0 +1,10 @@
+.summary {
+  width: rem(600px);
+  @media (max-width: $mantine-breakpoint-md) {
+    width: rem(400px);
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: rem(300px);
+  }
+}
