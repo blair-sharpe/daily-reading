@@ -1,0 +1,5 @@
+.paragraph {
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}

@@ -1,10 +1,20 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomePage } from './pages/Home.page';
+import { NotFoundPage } from './pages/NotFound.page';
+import { ReadingPlanPage } from './pages/ReadingPlan.page';
+import { ServerErrorPage } from './pages/ServerError.page';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
+    element: <ReadingPlanPage />,
+  },
+  {
+    path: '/error',
+    element: <ServerErrorPage />,
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />,
   },
 ]);
 
